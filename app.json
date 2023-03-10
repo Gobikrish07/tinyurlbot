@@ -1,0 +1,53 @@
+{
+    "name": "Stark Owner Bot",
+    "description": "Shorten long URL using TinyURL API",
+    "stack": "container",
+    "logo": "https://telegra.ph/file/68d28011b2bc356b5db01.png",
+    "keywords": [
+      "telegram",
+      "url-shortner",
+      "filter",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/Gobikrish07",
+    "repository": "https://github.com/multiverseofmaadneshh",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_KEY": {
+            "description": "Enter your TinyURL API.",
+            "required": false
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
