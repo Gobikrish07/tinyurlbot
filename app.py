@@ -8,7 +8,6 @@ from config import *
 import aiohttp
 import asyncio
 
-var port = process.env.PORT || 8080;
 
 # TinyURL API 
 
