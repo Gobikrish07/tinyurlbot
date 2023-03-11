@@ -29,9 +29,9 @@ async def url_message_handler(client, message):
     try:
         response = requests.get(f'https://tinyurl.com/api-create.php?url={message.text}&apikey={API_KEY}')
         shortened_url = response.text
-       await message.reply_text(f'𝙷𝚎𝚛𝚎 𝚒𝚜, \n𝚈𝚘𝚞𝚛 𝚂𝚑𝚘𝚛𝚝𝚎𝚗 𝙻𝚒𝚗𝚔 : {shortened_url}')
+        await message.reply_text(f'𝙷𝚎𝚛𝚎 𝚒𝚜, \n𝚈𝚘𝚞𝚛 𝚂𝚑𝚘𝚛𝚝𝚎𝚗 𝙻𝚒𝚗𝚔 : {shortened_url}')
     except:
-       await message.reply_text('Sorry. Please Try Again.')
+        await message.reply_text('Sorry. Please Try Again.')
 
 # Check whether Bot Started or Idle !!
 
