@@ -8,6 +8,8 @@ from config import *
 import aiohttp
 import asyncio
 
+var port = process.env.PORT || 8080;
+
 # TinyURL API 
 
 API_KEY=API_KEY
@@ -45,4 +47,4 @@ print('Bot Started !!')
 # Run
 port = int(os.environ.get('PORT', 8080))
 
-app.run()
+app.run(port)
