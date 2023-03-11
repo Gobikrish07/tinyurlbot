@@ -1,8 +1,8 @@
 import os
-from flask import Flask
 import random
 from pyrogram import Client, filters
 import requests
+from flask import Flask
 from config import *
 import asyncio
 
@@ -36,18 +36,11 @@ async def url_message_handler(client, message):
 
 # Check whether Bot Started or Idle !!
 
+
+
 print('Bot Started !!')
 
 # Run
-
-app = Flask(__name__)
-
-# ...
-
-if __name__ == '__main__':
-
-# Bind to PORT if defined, otherwise default to 5000.
-
 port = int(os.environ.get('PORT', 8080))
 
-app.run(host='0.0.0.0', port=port)
+app.run()
