@@ -1,2 +1,2 @@
-web: python app.py --port=$PORT
-worker: python app.py
+web: python3 app.py
+worker: python3 app.py
