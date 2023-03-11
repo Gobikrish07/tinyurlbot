@@ -32,7 +32,7 @@ async def url_message_handler(client, message):
         shortened_url = response.text
         await message.reply_text(f'𝙷𝚎𝚛𝚎 𝚒𝚜, \n𝚈𝚘𝚞𝚛 𝚂𝚑𝚘𝚛𝚝𝚎𝚗 𝙻𝚒𝚗𝚔 : {shortened_url}')
     except:
-        await message.reply_text('Sorry. Please Try Again.')
+       await message.reply_text('Sorry. Please Try Again.')
 
 # Check whether Bot Started or Idle !!
 
@@ -48,6 +48,6 @@ if __name__ == '__main__':
 
 # Bind to PORT if defined, otherwise default to 5000.
 
-port = int(os.environ.get('PORT', 5000))
+port = int(os.environ.get('PORT', 8080))
 
 app.run(host='0.0.0.0', port=port)
