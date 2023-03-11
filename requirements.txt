@@ -2,4 +2,5 @@ pyrogram
 tgcrypto
 flask
 requests
+aiohttp==3.8.4
 asyncio
