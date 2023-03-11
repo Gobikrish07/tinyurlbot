@@ -2,6 +2,7 @@ import os
 import random
 from pyrogram import Client, filters
 import requests
+from requests import get
 from flask import Flask
 from config import *
 import aiohttp
